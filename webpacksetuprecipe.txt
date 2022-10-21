@@ -1,0 +1,58 @@
+//import path module
+//import mini css extract plugin
+//export module object
+//ENTRY
+//set the entry property to the entry file directory
+//OUTPUT PROPERTIES
+//set the output property to an object, containing these properties:
+// - path
+// - publicPath 
+// - filename
+// set the path property to the path.resolve() method
+// @Params: __dirname, 'dist'(or name of folder to build to)
+// set publicPath value to an empty string
+// set filename to the name you want to give your JS bundle 
+// - we'll call it bundle.js 
+//MODE
+//set mode property to development (or production if it's a production build)
+//MODULE
+//module property contains an object containing these properties:
+// - rules
+//RULES 
+//rules property contains an Array of objects
+//RULES[0]: Object containing these properties:
+// - test 
+// - exclude 
+// - use 
+// set the value of the test property to a this regex: /\.js$/
+// set the value of the exclude property to: /(node_modules)/
+// set the value of the use to an object
+//USE Object contains these properties:
+// - loader
+// - options
+// set the value of the loader property to: 'babel-loader'
+// set the value of the options property to an Object
+//OPTIONS Object contains these properties: 
+// - presets
+// set the value of the presets property to: ['@babel/preset-env']
+//RULES[1]: Object containing these properties: 
+// - test 
+// - use 
+// set the value of test to this regex: /\.(sa|sc|c)ss$/
+// set the value of use to an array
+// USE is an Array of Objects
+// USE[0, 1, 2]: Object containing these properties:
+// - loader values: 
+// 1. MiniCSSExtractPlugin.loader
+// 2. css-loader
+// 3. sass-loader
+//USE [2] also add: 
+// - options 
+//OPTIONS Object, contains: 
+// - implementation
+// set implementation value to: require('sass')
+//PLUGINS
+// set plugins property to an array containing one item: 
+// - A new instance of the MiniCSSExtractPlugin 
+//MiniCssExtractPlugin
+//@Params: {fielname: 'bundle.css'}

@@ -1,0 +1,45 @@
+//libs
+//style
+//dom elements
+//COLORS
+/*
+* @Desc: destructure classes we'll need
+* @Classes: renderer, camera, scene, geometry, material, mesh, light
+*/
+//PARAMETER VARIABLES:
+//camera variables: field of view, aspect ratio, near clipping, far clipping
+//geometry params: (box) width, height, depth
+//material params: color
+//light params: color, intensity
+//INSTANTIATION
+//instantiate a renderer
+//instantiate a camera
+//instantiate a scene
+//instantiate a geometry
+//instantiate a material
+//instantiate a mesh
+//instantiate a light
+//POSITIONING
+/*
+* @Desc: set camera position
+* @Example: camera.position.z
+*/
+/*
+* @Desc: set light position
+* @Func: position.set()
+* @Params: x, y, z
+//ADD TO SCENE
+//add mesh to scene
+//add light to scene
+//FUNCTIONS
+/*resize()
+* @Desc: resize renderer to display size (if necessary)
+* @Params: renderer
+*/
+
+/*animate()
+* @Desc: create a render loop
+* @Params: time
+*/
+
+//initial animation frame request
